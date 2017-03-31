@@ -1,0 +1,20 @@
+{
+  "name": "clothshop",
+  "version": "1.0.0",
+  "description": "cloth shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "kuga",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-serve": "^0.1.7",
+    "koa-static": "^3.0.0",
+    "koajs": "^1.0.0"
+  }
+}
