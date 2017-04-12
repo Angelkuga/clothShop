@@ -1,0 +1,16 @@
+@import '../core/variable.scss';
+.page {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	.editorial-max-width {
+		max-width: 1300px !important;
+		margin-right: auto !important;
+		margin-left: auto !important
+	}
+	img {
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+}

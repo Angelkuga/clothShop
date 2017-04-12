@@ -1,0 +1,189 @@
+.page {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .page .editorial-max-width {
+    max-width: 1300px !important;
+    margin-right: auto !important;
+    margin-left: auto !important; }
+  .page img {
+    width: 100%;
+    display: block;
+    height: auto; }
+
+.page-index .brand {
+  width: 100%;
+  height: 110px;
+  box-sizing: border-box;
+  padding-top: 25px; }
+  .page-index .brand .top-logo {
+    display: table;
+    margin: 0 auto; }
+    .page-index .brand .top-logo img {
+      height: 42px; }
+.page-index .main-menu {
+  display: inline-block;
+  width: 100%;
+  height: 28px;
+  line-height: 28px ul;
+    line-height-list-style: none;
+    line-height-padding: 0;
+    line-height-margin: 0;
+    line-height-min-height: 160px; }
+  .page-index .main-menu .menu-items {
+    color: #222;
+    padding: 0 16.6666%;
+    line-height: 26px;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .page-index .main-menu .menu-item {
+    display: inline-block;
+    white-space: nowrap;
+    font-family: 'Meta Serif Offc W01 Bold';
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: normal !important;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto; }
+.page-index .rec-prod-list .row {
+  margin-left: -25px;
+  margin-right: -25px; }
+.page-index .rec-prod-list .prod-item {
+  padding: 25px; }
+.page-index .footer-menu .row {
+  padding: 30px 0; }
+.page-index .footer-menu .sub-logo {
+  width: 100%;
+  height: 180px;
+  background: url(../images/topLogo.png) no-repeat center center;
+  background-size: 240px 40px; }
+.page-index .footer-menu .sub-menu .tit {
+  box-sizing: border-box;
+  height: 56px;
+  padding-top: 32px;
+  font-size: 15px;
+  color: #2434e2;
+  line-height: 24px;
+  text-align: left;
+  position: relative; }
+  .page-index .footer-menu .sub-menu .tit:before {
+    content: '';
+    width: 100%;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: 0;
+    background-position: 18px center;
+    background-repeat: no-repeat; }
+.page-index .footer-menu .sub-menu .wrap-box {
+  margin-top: 20px; }
+.page-index .footer-menu .sub-menu li {
+  float: left;
+  margin-right: 25px; }
+  .page-index .footer-menu .sub-menu li.vip, .page-index .footer-menu .sub-menu li.guide, .page-index .footer-menu .sub-menu li.delivery {
+    width: 70px; }
+  .page-index .footer-menu .sub-menu li.pay, .page-index .footer-menu .sub-menu li.service {
+    width: 80px; }
+  .page-index .footer-menu .sub-menu li.vip .tit:before {
+    background-image: url(../images/icon_vip.png);
+    background-size: 19px 20px; }
+  .page-index .footer-menu .sub-menu li.guide .tit:before {
+    background-image: url(../images/icon_guide.png);
+    background-size: 20px 20px; }
+  .page-index .footer-menu .sub-menu li.delivery .tit:before {
+    background-image: url(../images/icon_delivery.png);
+    background-size: 18px 19px; }
+  .page-index .footer-menu .sub-menu li.pay .tit:before {
+    background-image: url(../images/icon_pay.png);
+    background-size: 20px 22px; }
+  .page-index .footer-menu .sub-menu li.service .tit:before {
+    background-image: url(../images/icon_service.png);
+    background-size: 19px 22px; }
+.page-index .footer-menu .sub-menu a {
+  display: block;
+  font-family: 'Meta Serif Offc W01 Bold';
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2434e2;
+  line-height: 17px;
+  padding: 0;
+  min-height: 28px;
+  display: inline-block; }
+.page-index .footer-menu .sub-qrcode .tit {
+  box-sizing: border-box;
+  height: 56px;
+  padding-top: 32px;
+  font-size: 15px;
+  color: #2434e2;
+  line-height: 24px;
+  text-align: center;
+  position: relative; }
+  .page-index .footer-menu .sub-qrcode .tit:before {
+    content: '';
+    width: 100%;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: 0;
+    background-position: center center;
+    background-repeat: no-repeat; }
+.page-index .footer-menu .sub-qrcode .qrcode {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  margin: 0 auto;
+  margin-top: 20px; }
+.page-index .footer-menu .sub-qrcode li {
+  width: 130px;
+  float: left; }
+  .page-index .footer-menu .sub-qrcode li.online .tit:before {
+    background-image: url(../images/icon_wechat.png);
+    background-size: 17px 14px; }
+  .page-index .footer-menu .sub-qrcode li.wechat .tit:before {
+    background-image: url(../images/icon_wechat.png);
+    background-size: 17px 14px; }
+  .page-index .footer-menu .sub-qrcode li.webo .tit:before {
+    background-image: url(../images/icon_webo.png);
+    background-size: 17px 14px; }
+.page-index .bottom .bt-nav a {
+  box-sizing: border-box;
+  border-left: #2434e2 1px solid;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center; }
+  .page-index .bottom .bt-nav a:last-child {
+    border-right: #2434e2 1px solid; }
+.page-index .bottom .copy {
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #2434e2; }
+
+/*# sourceMappingURL=index.css.map */
