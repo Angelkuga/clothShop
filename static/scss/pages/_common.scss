@@ -1,4 +1,19 @@
 @import '../core/variable.scss';
+@media (min-width: $screen-md-min) {
+	html, body {
+		font-size: 16px;
+	}
+}
+@media (min-width: $screen-sm-min) {
+	html, body {
+		font-size: 14px;
+	}
+}
+@media (max-width: $screen-xs-max) {
+	html, body {
+		font-size: 12px;
+	}
+}
 .page {
 	width: 100%;
 	height: auto;
@@ -13,4 +28,10 @@
 		display: block;
 		height: auto;
 	}
+}
+.hide {
+	display: none !important
+}
+.show {
+	display: block !important
 }
