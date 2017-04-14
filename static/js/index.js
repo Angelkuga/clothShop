@@ -90,6 +90,10 @@ function bindEvent() {
 		}, menuAniData.open)
 	});
 	
+	 $("#j_backup").click(function(e) {
+          //以1秒的间隔返回顶部
+        $('body,html').animate({scrollTop:0},600);
+   	});
 	// $(".menu-item").find(".title").on("click", function(A) {
 	// 	if (!$("html").hasClass("touch")) {
 	// 		clearTimeout(x);
