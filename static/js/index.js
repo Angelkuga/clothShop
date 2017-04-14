@@ -103,20 +103,14 @@ function bindEvent() {
 }
 
 function hideSubMenu(target) {
-	target.find(".sub-menu").removeClass("show");
+	target.find(".sub-menu").removeClass("open");
 	target.find(".title").removeClass("selected");
-	if (target.hasClass("mainmenu")) {
-		target.removeClass("open")
-	} else {
-		target.closest(".mainmenu").removeClass("open")
-	}
+	
 }
 
 function showSubMenu(target) {
-	target.closest(".mainmenu").addClass("open");
-	$('.main-menu').find(".sub-menu").removeClass("show");
-	target.find(".sub-menu").addClass("show");
-	target.find(".title").addClass("selected")
+	target.find(".title").addClass("selected");
+	target.find(".sub-menu").addClass("open");
 }
 $(document).ready(function() {
 	setFootMenu();

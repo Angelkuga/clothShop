@@ -9,7 +9,7 @@
 			display: table;
 			margin: 0 auto;
 			img{
-				height: 42px;
+				height: 67px;
 			}
 		}
 	}
@@ -90,21 +90,21 @@
 		}
 	}
 
-	.main-menu {
-		display: inline-block;
+	.main-menu{
+		display: block;
+		box-sizing: border-box;
 		width: 100%;
-		height: 28px;
-		line-height: 28px
-		ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			min-height: 160px;
-		}
+		height: 48px;
+		border-top: $baseBlue 4px solid;
+		padding-top: 4px;
 		.menu-items {
-			color: #222;
-			padding: 0 16.6666%;
-			line-height: 26px;
+			position: relative;
+			box-sizing: border-box;
+			height: 40px;
+			padding: 0;
+			list-style: none;
+			border-top: $baseBlue 2px solid;
+			border-bottom: $baseBlue 2px solid;
 			display: -moz-box;
 			display: -moz-flex;
 			display: -ms-flexbox;
@@ -127,67 +127,81 @@
 			-webkit-align-items: flex-start;
 			-ms-flex-align: start;
 			align-items: flex-start;
-			&.editorial-max-width {
-				.sub-menu-list {
-					max-width: 1000px !important;
-					margin: 0 auto !important;
-					padding: 18px 80px 0 80px;
-				}
-				.sub-menu {
-					padding: 0;
-				}
-			}
 		}
 		.menu-item {
-			display: inline-block;
-			white-space: nowrap;
-			font-family: 'Meta Serif Offc W01 Bold';
-			font-size: 15px/$ppr;;
-			text-decoration: none;
-			text-transform: uppercase;
-			display: inline-block;
-			font-weight: normal !important;
+			width: 12.5%;
 			-webkit-flex: 0 1 auto;
 			-ms-flex: 0 1 auto;
 			flex: 0 1 auto;
 			-webkit-align-self: auto;
 			-ms-flex-item-align: auto;
 			align-self: auto;
-			.title:hover {
-				cursor: pointer;
-			}
 		}
 		.title {
-			color: #cecece;
+			width: 100%;
+			display: inline-block;
+			line-height: 36px;
+			font-family: 'Meta Serif Offc W01 Bold';
+			font-size: 18px/$ppr;
+			font-weight: normal !important;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $fontColor;
 			&:hover, &.selected {
-				color: $fontColor;
+				color: $black;
 			}
 		}
 		.sub-menu {
+			box-sizing: border-box;
+			width: 100%;
+			height: 0;
 			position: absolute;
 			left: 0;
-			width: 100%;
-			padding: 20px 16.6666%;
-			display: none;
+			top: 40px;
 			z-index: 200;
+			background-color: $white;
+			-webkit-transition: all .6s ease;
+			-moz-transition: all .6s ease;
+			-o-transition: all, 0.6s ease;
+			transition: all .6s ease;
+			overflow: hidden;
+			.sub-menu-list {
+				padding: 20px;
+			}
 			.sub-menu-column {
 				display: inline-block;
 				vertical-align: top;
-				width: 25%;
+				width: 24%;
 					.sub-menu-column-item {
 						height: 40px;
 						a {
+							color: $black;
 							white-space: normal;
 							display: inline-block;
 							line-height: 17px;
+							&:hover {
+								text-decoration: underline;
+							}
+							&.img-responsive {
+								display: block;
+								width: 100%;
+								height: auto;
+							}
 						}
 					}
 			}
-			a {
-				color: $fontColor;
+			.sub-menu-column-list {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0 10%;
+			}
+			&.open {
+				height: 320px;
 			}
 	
 		}
+		
 	}
 	.main-menu-xs {
 		display: block;
@@ -244,8 +258,78 @@
 		}
 	}
 	
+	.carousel-cloth {
+		.owl-carousel {
+			.owl-dots {
+			 	position: absolute;
+			 	left: 0;
+			 	bottom: 20px;
+			 	width: 100%;
+			 	height: 24px;
+			 	text-align: center;
+			}
+			.owl-dot {
+				box-sizing: border-box;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				padding: 2px;
+				margin: 0 10px;
+				span {
+					width: 16px;
+					height: 16px;
+					display: inline-block;
+					border-radius: 50%;
+					border: transparent 2px solid;
+					background-color: $white;
+					&:hover {
+						border-color: $baseBlue;
+					}
+				}
+				&.active{
+					span {
+						border-color: $baseBlue;
+					}
+					
+				}
+			}
+		}
+	}
 	.rec-prod {
+		position: relative;
+		.rec-txt {
+			h6{
+				font-size: ;
+				color: $baseBlue;
+				text-align: center;
 
+			}
+			p {
+				font-size: ;
+				line-height: 1.2
+				color: $ccc;
+				text-align: center;
+				margin-top: ;
+			}
+			&.desktop {
+				width: 100%;
+				height: 100%;
+				display: table;
+				.txt-wrap {
+					width: ;
+					height: ;
+					box-sizing: border-box;
+					border: $baseBlue 2px solid;
+					background-color:
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+			&.mobile {
+				
+			}
+
+		}
 	}
 	.rec-prod-list {
 		.row{
@@ -449,12 +533,12 @@
 			padding-bottom: 40px;
 			a {
 				box-sizing: border-box;
-				border-left: $baseColor 1px solid;
+				border-left: $baseBlue 1px solid;
 				font-size: 15px/$ppr;
 				line-height: 1;
 				text-align: center;
 				&:last-child {
-		 			border-right: $baseColor 1px solid;
+		 			border-right: $baseBlue 1px solid;
 				}
 			}
 		}

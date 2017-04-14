@@ -37,10 +37,14 @@ $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 
 
-$baseColor: #2434e2;
+$black: #000;
+$white: #fff;
+
+$baseBlue: #2434e2;
+
 $bgColor: #fffef8;
 
 // font-style
-$fontColor: $baseColor;
+$fontColor: $baseBlue;
 // 自适应变量定义
 $ppr:16px/1rem;
