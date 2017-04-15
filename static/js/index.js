@@ -22,10 +22,10 @@ function findBootstrapEnvironment() {
 }
 
 function setFootMenu() {
-	console.log(findBootstrapEnvironment);
+	console.log(findBootstrapEnvironment());
 	if (findBootstrapEnvironment() == "xs" || findBootstrapEnvironment() == "sm") {
 		$("#j_footer_menu").addClass("footer-menu-mobile");
-		$("#j_footer_menu .sub-menu .wrap-box").css("display", "none");
+		$("#j_footer_menu .sub-menu .wrap-box").css("display", "none");
 		$("#j_footer_menu .sub-menu .tit").unbind().click(function() {
 			console.log("come in");
 			$("#j_footer_menu .sub-menu .tit").removeClass("opened");
@@ -48,6 +48,8 @@ function setFootMenu() {
 
 
 function bindEvent() {
+
+	// menu
 	$('.menu-toggle').click(function(){
 		$('.sub-menu-sm-xs').toggleClass('opened');
 	});
@@ -90,6 +92,8 @@ function bindEvent() {
 		}, menuAniData.open)
 	});
 	
+
+	// backup  返回顶部
 	 $("#j_backup").click(function(e) {
           //以1秒的间隔返回顶部
         $('body,html').animate({scrollTop:0},600);
@@ -104,6 +108,58 @@ function bindEvent() {
 	// 	}
 	// });
 
+
+	// rec-prod 推荐产品 列表显示
+	$("#j_rec_img").click(function() {
+		if (findBootstrapEnvironment() == "xs" || findBootstrapEnvironment() == "sm") {
+			$(".rec-txt.mobile").toggleClass('show');
+		} else {
+			$(".rec-txt.desktop").toggleClass('show');
+		}
+		$('#j_rec_prod_list').toggleClass('show');
+	});
+
+
+	$(".geniousbar-search").click(function(p) {
+		p.preventDefault();
+		// $.zegna.banners.closeAll();
+		$(".sliderWrap").removeClass("nobg");
+		$(".sliderWrap").removeClass("bg2");
+		$(".sliderWrap .content").hide();
+		// $(".geniousbaricons li a").removeClass("active");
+		// $(".geniousbarsearchlink").addClass("active");
+		$(".sliderWrap .geniousbarsearchcontent").show();
+		$(".ribbon-right").addClass("opened");
+		// if (!(location.protocol === "http:" && fiabSecureLogin == "true")) {
+		// 	$(".ribbon-right").addClass("opened")
+		// }
+		// if (findBootstrapEnvironment() != "xs" || 1 == 1) {
+		// 	$("#geniousbarsearchresults").css("height", $(".ribbon-right").height() - 118 - 70)
+		// }
+		// $("#submenu-sm-xs").removeClass("opened");
+		// if ($("html").hasClass("touch")) {
+		// 	$("body").addClass("prevent-scroll")
+		// }
+		return false
+	});
+	$("#close-ribbon-right").click(function(p) {
+		p.preventDefault();
+		// $(".geniousbaricons li a").removeClass("active");
+		$(".ribbon-right").removeClass("opened");
+		// $("#submenu-sm-xs").removeClass("opened");
+		// $("html, body").removeClass("prevent-scroll");
+		// if ($(".genious-search-suggestion").data("aibs-widget") === "GeniousSearchSuggestion") {
+		// 	$(".geniousbarcontent input#keywords").val("");
+		// 	$(".textbox-search.genious-search-suggestion a").removeClass("fill-svg-search");
+		// 	$(".geniousbarcontent #search-result").stop().delay(500).queue(function() {
+		// 		$(this).addClass("opacity-0")
+		// 	});
+		// 	$(".autosuggestion").removeClass("opacity-1");
+		// 	$(".autosuggestion").addClass("opacity-0 hide")
+		// }
+		return false;
+	});
+
 }
 
 function hideSubMenu(target) {
@@ -117,6 +173,8 @@ function showSubMenu(target) {
 	target.find(".sub-menu").addClass("open");
 }
 $(document).ready(function() {
+	$('.rec-txt').hide();
+	$(window).resize(setFootMenu);
 	setFootMenu();
 	bindEvent();
 });

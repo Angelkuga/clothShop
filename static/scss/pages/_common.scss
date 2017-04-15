@@ -30,19 +30,15 @@
 		display: block;
 		height: auto;
 	}
+	a {
+		&:hover {
+			cursor: pointer;
+		}
+	}
 }
 .hide {
 	display: none !important
 }
 .show {
 	display: block !important
-}
-.back-top {
-	width: 36px;
-	height: 34px;
-	background: url(../images/icon_backtop.png) no-repeat center center;
-	background-size: 100% 100%;
-	position: fixed;
-	bottom: 50px;
-	right: 35px;
 }
