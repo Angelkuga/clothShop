@@ -52,3 +52,28 @@
 .show {
 	display: block !important
 }
+
+input::-webkit-input-placeholder {
+	color: $baseBlue;
+}
+input:-moz-placeholder {
+	color: $baseBlue;
+}
+input::-moz-placeholder {
+	color: $baseBlue;
+}
+input:-ms-input-placeholder {
+	color: $baseBlue;
+}
+input:focus::-webkit-input-placeholder {
+	opacity: 0
+}
+input:focus:-moz-placeholder {
+	opacity: 0
+}
+input:focus::-moz-placeholder {
+	opacity: 0
+}
+input:focus:-ms-input-placeholder {
+	opacity: 0
+}
