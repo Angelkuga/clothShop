@@ -111,14 +111,15 @@ function bindEvent() {
 
 	// rec-prod 推荐产品 列表显示
 	$("#j_rec_img").click(function() {
-		if (findBootstrapEnvironment() == "xs" || findBootstrapEnvironment() == "sm") {
-			$(".rec-txt.mobile").toggleClass('show');
-		} else {
-			$(".rec-txt.desktop").toggleClass('show');
+		if (findBootstrapEnvironment() == "md" || findBootstrapEnvironment() == "lg") {
+			$(".rec-txt.desktop").toggleClass('show');	
 		}
-		$('#j_rec_prod_list').toggleClass('show');
+		$('#j_rec_prod_list').toggleClass('show');	
 	});
-
+	$('.mobile-sec-txt.rec-txt').click(function() {
+		$(this).find(".arrow").toggleClass('up');
+		$('#j_rec_prod_list').toggleClass('show');	
+	})
 
 	$(".geniousbar-search").click(function(p) {
 		p.preventDefault();
@@ -173,8 +174,13 @@ function showSubMenu(target) {
 	target.find(".sub-menu").addClass("open");
 }
 $(document).ready(function() {
-	$('.rec-txt').hide();
-	$(window).resize(setFootMenu);
+	$('.rec-txt.desktop').hide();
+	$(window).resize(function() {
+		if (findBootstrapEnvironment() == "sm" || findBootstrapEnvironment() == "xs") {
+			$(".rec-txt.desktop").removeClass('show');	
+		}
+		setFootMenu();
+	});
 	setFootMenu();
 	bindEvent();
 });

@@ -1,0 +1,11 @@
+@mixin single-line() {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+@mixin muti-line($line: 2) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $line;
+	overflow: hidden;
+}
