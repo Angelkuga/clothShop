@@ -1,0 +1,90 @@
+#geniousbar-account-login {
+	.titles {
+		text-align: center;
+		padding-top: 27px;
+		text-transform: uppercase;
+	}
+	.ckbx{
+		&.checkbox {
+			span
+			{
+				&.icon {
+					background-size: 20px 60px !important;
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+		label {
+			color: #656463;
+		}
+	}
+	.textbox {
+		border: 1px solid #e7e7e7;
+	}
+	.secondary-button {
+		border: 1px solid #d8d8d8;
+		color: #656463;
+		&:link, &:visited {
+			border: 1px solid #d8d8d8;
+			color: #656463;
+		}
+	}
+	.login-action, .login-footer{
+		text-align: center;
+	}
+	a {
+		color: #181818;
+		text-decoration: underline;
+		&:hover, &:active {
+			color: #181818;
+			text-decoration: underline;
+		}
+	}
+	.checkbox {
+		margin: 0 0 21px;
+		height: 20px;
+		label {
+			line-height: 1.5;
+			padding: 0 0 0 27px;
+		}
+	}
+	.login-footer {
+		border-top: solid 2px #e7e7e7;
+		padding-top: 26px;
+	}
+}
+
+#geniousbar-account-signup {
+	.register-action {
+		a {
+			background-color: transparent;
+		}
+	}
+	.benefits-action {
+		padding-bottom: 80px;
+		a {
+			color: #181818;
+			text-decoration: underline;
+			&:hover, &:active {
+				color: #181818;
+				text-decoration: underline;
+			}
+		}
+	}
+	.login-action {
+		text-align: center;
+		margin-bottom: 80px;
+		a {
+			color: #181818;
+			text-decoration: underline;
+			&:hover, &:active {
+				color: #181818;
+				text-decoration: underline;
+			}
+		}
+	}
+	#password {
+		margin-bottom: 7px;
+	}
+}

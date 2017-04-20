@@ -152,6 +152,17 @@ function bindEvent() {
 		// }
 		return false
 	});
+	$(".geniousbar-account").click(function(p) {
+		p.preventDefault();
+		// $.zegna.banners.closeAll();
+		$(".sliderWrap").removeClass("nobg");
+		$(".sliderWrap").removeClass("bg2");
+		$(".sliderWrap .content").hide();
+
+		$(".sliderWrap .geniousbaraccountcontent").show();
+		$(".ribbon-right").addClass("opened");
+		return false
+	});
 	$("#close-ribbon-right").click(function(p) {
 		p.preventDefault();
 		// $(".geniousbaricons li a").removeClass("active");
