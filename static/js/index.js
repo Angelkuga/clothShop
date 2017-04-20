@@ -111,17 +111,24 @@ function bindEvent() {
 
 	// rec-prod 推荐产品 列表显示
 	$("#j_rec_img,.rec-txt").click(function() {
-		if (findBootstrapEnvironment() == "md" || findBootstrapEnvironment() == "lg") {
-			$(".rec-txt.desktop").toggleClass('show');
+		var $prodList = $('#j_rec_prod_list');
+		if ($prodList.css("display") == "block") {
+			if (findBootstrapEnvironment() == "xs" || findBootstrapEnvironment() == "md") {
+				$('.rec-txt.mobile').removeClass('opened');
+			} else {
+				$('.rec-txt.desktop').removeClass('opened');
+			}
+			$prodList.slideUp();	
 		} else {
-			$(".rec-txt.mobile").toggleClass('open');
+			if (findBootstrapEnvironment() == "xs" || findBootstrapEnvironment() == "md") {
+				$('.rec-txt.mobile').addClass('opened');
+			} else {
+				$('.rec-txt.desktop').addClass('opened');
+			}
+			$prodList.slideDown();	
 		}
-		$('#j_rec_prod_list').toggleClass('show');	
+		return;
 	});
-	$('.mobile-sec-txt.rec-txt').click(function() {
-		$(this).find(".arrow").toggleClass('up');
-		$('#j_rec_prod_list').toggleClass('show');	
-	})
 
 	$(".geniousbar-search").click(function(p) {
 		p.preventDefault();

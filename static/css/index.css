@@ -498,7 +498,7 @@ input:focus:-ms-input-placeholder {
         left: -6px;
         top: 4px;
         box-sizing: border-box; }
-    .page-index .rec-prod .rec-txt.desktop.open {
+    .page-index .rec-prod .rec-txt.desktop.opened {
       -webkit-transform: translate3d(-50%, -50%, 0);
       -moz-transform: translate3d(-50%, -50%, 0);
       -o-transform: translate3d(-50%, -50%, 0);
@@ -512,10 +512,10 @@ input:focus:-ms-input-placeholder {
     -moz-transform: translate3d(-50%, -50%, 0);
     -o-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
     .page-index .rec-prod .rec-txt.mobile h6 {
       font-size: 14px;
       line-height: 18px;
@@ -560,11 +560,11 @@ input:focus:-ms-input-placeholder {
         -moz-transform: translate3d(0, 50%, 0) rotate(-45deg);
         -o-transform: translate3d(0, 50%, 0) rotate(-45deg);
         transform: translate3d(0, 50%, 0) rotate(-45deg); }
-    .page-index .rec-prod .rec-txt.mobile.open {
+    .page-index .rec-prod .rec-txt.mobile.opened {
       top: 100%; }
-      .page-index .rec-prod .rec-txt.mobile.open .txt-wrap p {
+      .page-index .rec-prod .rec-txt.mobile.opened .txt-wrap p {
         display: block; }
-      .page-index .rec-prod .rec-txt.mobile.open .arrow span {
+      .page-index .rec-prod .rec-txt.mobile.opened .arrow span {
         -webkit-transform: translate3d(0, 0, 0) rotate(135deg);
         -moz-transform: translate3d(0, 0, 0) rotate(135deg);
         -o-transform: translate3d(0, 0, 0) rotate(135deg);
