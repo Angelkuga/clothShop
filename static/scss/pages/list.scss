@@ -1,0 +1,27 @@
+@import '../common/common.scss';
+.page-list {
+	.filter-bar {
+		.col {
+			font-size: ;
+			font-color: $fontColor;
+		}
+		.filter-item {
+			&.up{
+				content: "";
+				display: inline-block;
+				width: ;
+				height: ;
+				background: url();
+			}
+		}
+		.price-list {
+			.price-item {
+				font-size: ;
+				font-color: $fontGrey;
+				&:hover {
+					font-color: $fontColor;
+				}
+			}
+		}
+	}
+}
