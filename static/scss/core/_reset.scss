@@ -6,3 +6,8 @@ ul, ol{
 .pointerClass {
 	cursor: pointer
 }
+a {
+	&:focus {
+		text-decoration: none!important;
+	}
+}

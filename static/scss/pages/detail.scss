@@ -1,0 +1,161 @@
+@import 'common/util.scss';
+.page-detail {
+	.prod {
+		width: 100%;
+		.prod-slider {
+
+		}
+		.prod-detail {
+			.detail-info {
+				padding-top: 100px;
+			}
+			.name {
+				font-size: 22px;
+				line-height: 1;
+				color: $fontColor;
+				margin-bottom: 15px;
+				margin-top: 0;
+			}
+			.rate {
+				font-size: 1rem;
+				line-height: 1;
+				color: $fontColor;
+				margin-bottom: 15px;
+			}
+			.descri {
+				font-size: 1rem;
+				color: $fontGrey;
+				line-height: 28px;
+			}
+			dl {
+				dt {
+					float: left;
+					font-size: 16px;
+					color: $fontGrey;
+				}
+				dd {
+					float: left;
+					ul {
+						li {
+							float: left;
+						}
+					}
+				}
+			}
+			.color-slect {
+				.color-item {
+				
+				}
+			}
+			.size-select {
+				.size-item {
+
+				}
+			}
+		}
+	}
+	.prod-slider {
+		padding: 0 70px;
+	}
+	.prod-descri {
+		.row {
+			padding-top: 65px;
+    		padding-bottom: 65px;
+		}
+		.section {
+			border-top: $baseBlue 2px solid;
+			border-bottom: $baseBlue 2px solid;
+		}
+		ul {
+			padding-left: 40px;
+			
+			li {
+				font-size: 1rem;
+				line-height: 1rem;
+				height: 1rem;
+				color: $fontColor;
+				text-align: left;
+				margin-bottom: 15px/$ppr;
+				display: block;
+				span {
+					display: inline-block;
+				}
+			}		
+		}
+		.col-rt {
+			li {
+				&:before {
+					content: "";
+					width: 13px;
+					height: 1rem;
+					margin-right: 10px/$ppr;
+					background: url(../images/icon_tip_arrow.png) no-repeat center center;
+					background-size: 100% 9px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.prod-style {
+		.sec {
+			padding-top: 90px;
+			padding-bottom: 90px;
+			border-top: $baseBlue 1px solid;
+		}
+		.title {
+			position: relative;
+			font-size: 18px/$ppr;
+			color: $fontColor;
+			margin-bottom: 20px;
+		}
+		.txt {
+			font-size: 14px/$ppr;
+			line-height: 28px;
+			color: $fontGrey;
+		}
+		.part-1 {	
+			padding-top: 55px;
+		}
+		.part-2 {
+
+		}
+		.part-3 {
+			padding-top: 55px;
+			.title {
+				padding-left: 32px;
+				&:before {
+					content: "";
+					width: 22px;
+					height: 22px;
+					background: url(../images/icon_circle_active.png) no-repeat center center;
+					background-size: 100% 100%;
+					display: inline-block;
+					position: absolute;
+					left: 0;
+					top: -2px;
+				}
+			}
+		}
+		
+	}
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		.prod-style {
+			.sec{
+				padding: 30px;
+			}
+			.part-1 {
+				padding-top: 10px;
+			}
+		}
+	}
+	@media (max-width: $screen-xs-max) {
+		.prod-style {
+			.sec{
+				padding: 30px;
+			}
+			.part-1 {
+				padding-top: 10px;
+			}
+		}
+	}
+}

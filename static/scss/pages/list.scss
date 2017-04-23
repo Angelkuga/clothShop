@@ -1,27 +1,119 @@
-@import '../common/common.scss';
+@import 'common/util.scss';
 .page-list {
 	.filter-bar {
+		padding-top: 15px;
+		position: relative;
+		.filter-bar-box {
+			border-bottom: $baseBlue 2px solid;
+		}
 		.col {
-			font-size: ;
-			font-color: $fontColor;
+			font-size: 14px/$ppr;
+			line-height: 24px;
+			height: 24px;
+			color: $fontColor;
+		}
+		a {
+			text-decoration: none;
+			&:hover, &:focus, &:active {
+				text-decoration: none;
+			}
 		}
 		.filter-item {
-			&.up{
+			width: 100%;
+			line-height: 24px;
+			height: 24px;
+			box-sizing: border-box;
+			font-size: 14px/$ppr;
+			color: $fontColor;
+			display: inline-block;
+			text-align: center;
+			&:after {
 				content: "";
 				display: inline-block;
-				width: ;
-				height: ;
-				background: url();
+				width: 9px/$ppr;
+				height: 13px/$ppr;
+				margin-left: 3px/$ppr;
+				background: url(../images/arrow_up.png) no-repeat center center;
+				background-size: 100% 100%;
+				font-color: $fontColor;
+				text-decoration: none;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+			}
+			&.down{
+				&:after {
+					-webkit-transform: rotate(180deg);
+					-moz-transform: rotate(180deg);
+					-o-transform: rotate(180deg);
+					transform: rotate(180deg);
+				}
 			}
 		}
 		.price-list {
+			display: none;
+			position: absolute;
+			right: 0;
+			top: 24px;
+			width: 100px/$ppr;
+			padding: 0 6px/$ppr;
+			box-sizing: border-box;
+			background-color: rgba(255, 255, 255, .8);
+			border: $baseBlue 2px solid;
+			// border-top: 0;
+			z-index: 200;
 			.price-item {
-				font-size: ;
-				font-color: $fontGrey;
-				&:hover {
-					font-color: $fontColor;
+				font-size: 14px/$ppr;
+				color: $black;	
+				line-height: 32px/$ppr;
+				text-decoration: none;
+				&:hover, &:active {
+					color: $baseBlue;
+					text-decoration: none;
 				}
 			}
+		}
+		.col-1 {
+			padding-left: 0;
+			padding-right: 0;
+			text-align: left;
+			width: 36px/$ppr;
+		}
+		.col-2 {
+			padding-left: 0;
+			padding-right: 0;
+			ul {
+				width: 100%;
+				li {
+					width: 25%;
+					float: left;
+					display: inline-block;
+				}
+			}
+		}
+		.col-3 {
+			float: right;
+			padding: 0;
+			position: relative;
+			width: 100px/$ppr;
+			.filter-item {
+				text-align: right;
+				&:after {
+					width: 12px/$ppr;
+					height: 14px/$ppr;
+					margin-left: 7px/$ppr;
+					background-image: url(../images/arrow_up_s.png);
+					background-size: 100% 8px/$ppr;
+				}
+			}
+			
+		}
+		@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+			padding: 0 30px;
+		}
+		@media (max-width: $screen-xs-max) {
+			padding: 0 30px;
 		}
 	}
 }

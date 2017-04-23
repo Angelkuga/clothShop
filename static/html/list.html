@@ -10,16 +10,14 @@
 
 	    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
-          <link rel="stylesheet" type="text/css" href="../css/common.css">
-	    <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+	    <link rel="stylesheet" type="text/css" href="../css/list.css">
 
 	    <script type="text/javascript" src="../js/jquery-3.2.0.js"></script>
-
 	    <script type="text/javascript" src="../js/bootstrap.js"></script>
-
 	    <script type="text/javascript" src="../js/owl.carousel.js"></script>
-
-        <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/list.js"></script>
 	</head>
 	<body>
 		<div class="page page-list">
@@ -581,74 +579,36 @@
             </div>
             <!-- CATA BANNER END -->
 
-            <!-- MOBILE NAV START -->
-            <div class="sidebar-center visible-xs visible-sm">
-                <div class="row">
-                    <div class="col-xs-3 col-sm-3">
-                        <a href="">
-                            <span class="service">
-                                定制服务
-                            </span>
-                        </a>
-                    </div>
-                    <div class="col-xs-3 col-sm-3">
-                        <a href="">
-                            <span class="book">
-                                预约搭配
-                            </span>
-                        </a>
-                    </div>
-                    <div class="col-xs-3 col-sm-3">
-                        <a href="">
-                            <span class="shop">
-                                购物车
-                            </span>
-                        </a>
-                    </div>
-                    <div class="col-xs-3 col-sm-3">
-                        <a href="">
-                            <span class="account">
-                                个人中心
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- MOBILE NAV END -->
-
-
+            <!--FILTER-BAR  START -->
             <div class="filter-bar">
                 <div class="editorial-max-width">
                     <div class="filter-bar-box clearfix">
                         <div class="col col-1 col-md-1 col-lg-1 col-sm-1 col-xs-1">排序</div>
                         <div class="col col-2 col-md-4 col-lg-4 col-sm-8 col-xs-8">
-                            <ul>
-                                <li><a href="" class="filter-item">默认</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="" class="filter-item">时间</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="" class="filter-item">价格</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="" class="filter-item">收藏</a></li>
+                            <ul class="clearfix">
+                                <li><a href="#" class="filter-item down">默认</a></li>
+                                <li><a href="javascript:void(0);" class="filter-item">时间</a></li>
+                                <li><a href="javascript:void(0);" class="filter-item">价格</a></li>
+                                <li><a href="javascript:void(0);" class="filter-item">收藏</a></li>
                             </ul>
                         </div>
-                        <div class="col col-3 col-md-2 col-lg-2 col-md-offset-5 col-lg-offset-5 col-sm-3 col-xs-3">
-                            <a href="" class="filter-item filter-price">价格区间</a>
+                        <div class="col col-3 col-md-2 col-lg-2 col-md-offset-5 col-lg-offset-5 col-sm-4 col-xs-4">
+                            <a href="javascript:void(0);" class="filter-item filter-price">价格区间</a>
                             <ul class="price-list">
-                                <li class="price-item"><a href="">0~300</a></li>
-                                <li class="price-item"><a href="">301~1000</a></li>
-                                <li class="price-item"><a href="">1001~2000</a></li>
-                                <li class="price-item"><a href="">2001~4000</a></li>
-                                <li class="price-item"><a href="">4000以上</a></li>
+                                <li><a href="javascript:void(0);" class="price-item">0~300</a></li>
+                                <li><a href="javascript:void(0);" class="price-item">301~1000</a></li>
+                                <li><a href="javascript:void(0);" class="price-item">1001~2000</a></li>
+                                <li><a href="javascript:void(0);" class="price-item">2001~4000</a></li>
+                                <li><a href="javascript:void(0);" class="price-item">4000以上</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>              
-			<div class="rec-prod-list" id="j_rec_prod_list">
+            </div>    
+            <!-- FILTER-BAR  END -->
+
+            <!-- PROD-LIST START -->
+			<div class="prod-list">
                 <div class="editorial-max-width">
                      <section class="section">
         				<div class="row">
@@ -765,6 +725,7 @@
                     </section>
                 </div>
 			</div>
+            <!-- PROD-LIST END -->
 			
             <!--  FOOT-MENU START-->
 			<div class="footer-menu" id="j_footer_menu">

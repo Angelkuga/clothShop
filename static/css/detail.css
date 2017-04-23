@@ -1,0 +1,96 @@
+.page-detail .prod {
+  width: 100%; }
+  .page-detail .prod .prod-detail .detail-info {
+    padding-top: 100px; }
+  .page-detail .prod .prod-detail .name {
+    font-size: 22px;
+    line-height: 1;
+    color: #2434e2;
+    margin-bottom: 15px;
+    margin-top: 0; }
+  .page-detail .prod .prod-detail .rate {
+    font-size: 1rem;
+    line-height: 1;
+    color: #2434e2;
+    margin-bottom: 15px; }
+  .page-detail .prod .prod-detail .descri {
+    font-size: 1rem;
+    color: #8c8a87;
+    line-height: 28px; }
+  .page-detail .prod .prod-detail dl dt {
+    float: left;
+    font-size: 16px;
+    color: #8c8a87; }
+  .page-detail .prod .prod-detail dl dd {
+    float: left; }
+    .page-detail .prod .prod-detail dl dd ul li {
+      float: left; }
+.page-detail .prod-slider {
+  padding: 0 70px; }
+.page-detail .prod-descri .row {
+  padding-top: 65px;
+  padding-bottom: 65px; }
+.page-detail .prod-descri .section {
+  border-top: #2434e2 2px solid;
+  border-bottom: #2434e2 2px solid; }
+.page-detail .prod-descri ul {
+  padding-left: 40px; }
+  .page-detail .prod-descri ul li {
+    font-size: 1rem;
+    line-height: 1rem;
+    height: 1rem;
+    color: #2434e2;
+    text-align: left;
+    margin-bottom: 0.9375rem;
+    display: block; }
+    .page-detail .prod-descri ul li span {
+      display: inline-block; }
+.page-detail .prod-descri .col-rt li:before {
+  content: "";
+  width: 13px;
+  height: 1rem;
+  margin-right: 0.625rem;
+  background: url(../images/icon_tip_arrow.png) no-repeat center center;
+  background-size: 100% 9px;
+  display: inline-block; }
+.page-detail .prod-style .sec {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  border-top: #2434e2 1px solid; }
+.page-detail .prod-style .title {
+  position: relative;
+  font-size: 1.125rem;
+  color: #2434e2;
+  margin-bottom: 20px; }
+.page-detail .prod-style .txt {
+  font-size: 0.875rem;
+  line-height: 28px;
+  color: #8c8a87; }
+.page-detail .prod-style .part-1 {
+  padding-top: 55px; }
+.page-detail .prod-style .part-3 {
+  padding-top: 55px; }
+  .page-detail .prod-style .part-3 .title {
+    padding-left: 32px; }
+    .page-detail .prod-style .part-3 .title:before {
+      content: "";
+      width: 22px;
+      height: 22px;
+      background: url(../images/icon_circle_active.png) no-repeat center center;
+      background-size: 100% 100%;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: -2px; }
+@media (min-width: 768px) and (max-width: 991px) {
+  .page-detail .prod-style .sec {
+    padding: 30px; }
+  .page-detail .prod-style .part-1 {
+    padding-top: 10px; } }
+@media (max-width: 767px) {
+  .page-detail .prod-style .sec {
+    padding: 30px; }
+  .page-detail .prod-style .part-1 {
+    padding-top: 10px; } }
+
+/*# sourceMappingURL=detail.css.map */
