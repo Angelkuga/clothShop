@@ -1,5 +1,20 @@
 @import 'common/util.scss';
 .page-detail {
+	a {
+		text-decoration: none;
+		&.hover, &.active {
+			text-decoration: none;
+		}
+	}
+	.share-save-xs {
+		.top-bar {
+			width: 100%;
+			height: auto;
+			.title {
+				font-size: 1rem
+			}
+		}
+	}
 	.prod {
 		width: 100%;
 		.prod-slider {
@@ -10,46 +25,260 @@
 				padding-top: 100px;
 			}
 			.name {
-				font-size: 22px;
+				font-size: 24px;
 				line-height: 1;
 				color: $fontColor;
-				margin-bottom: 15px;
+				margin-bottom: 20px;
 				margin-top: 0;
 			}
 			.rate {
-				font-size: 1rem;
+				font-size: 20px;
 				line-height: 1;
 				color: $fontColor;
-				margin-bottom: 15px;
+				margin-bottom: 20px;
 			}
 			.descri {
-				font-size: 1rem;
+				font-size: 18px;;
 				color: $fontGrey;
 				line-height: 28px;
+				margin-bottom: 50px;
 			}
-			dl {
+			.selector {
+				margin-bottom: 8px;
+			}
+			.s-item {
+				margin: 0;
+				padding: 0;
 				dt {
 					float: left;
-					font-size: 16px;
+					font-size: 1rem;
+					line-height: 20px;
+					height: 20px;
 					color: $fontGrey;
+					margin-right: 20px;
+					font-weight: normal;
 				}
 				dd {
 					float: left;
+					height: 20px;
 					ul {
 						li {
 							float: left;
+							margin-right: 10px;
+							a {
+								text-decoration: none;
+								&:hover, &:active {
+									text-decoration: none;
+								}
+							}
 						}
 					}
 				}
 			}
-			.color-slect {
+			
+			.color-select {
 				.color-item {
-				
+					display: block;
+					width: 20px;
+					height: 20px;
+					box-sizing: border-box;
+					border: 1px #ccc solid;	
+					padding: 2px;
+					span {
+						display: block;
+						width: 14px;
+						height: 14px;
+						// 黑色
+						background-color: #fff;
+						text-indent: -9999px;
+					}
+					// 黑色
+					&.black {
+						span {
+							background-color: #000;
+						}
+					}
+					// 白色
+					&.white {
+						span {
+							background-color: #fff;
+						}
+					}
+					// 红色
+					&.red {
+						span {
+							background-color: #ff0000;
+						}
+					}
+					// 橙色
+					&.orange  {
+						span {
+							background-color: #FFA500;
+						}
+					}
+					// 黄色
+					&.yellow {
+						span {
+							background-color: #FFFF00;
+						}
+					}
+					// 绿色
+					&.green {
+						span {
+							background-color: #00FF00;
+						}
+					}
+					// 青色
+					&.cyan {
+						span {
+							background-color: #00FFFF;
+						}
+					}
+					// 蓝色
+					&.blue {
+						span {
+							background-color: #1E90FF;
+						}
+					}
+					// 紫色
+					&.purple {
+						span {
+							background-color: #8B00FF;
+						}
+					}
+					// 咖啡色
+					&.brown {
+						span {
+							background-color: #4D3900;
+						}
+					}
+					// 灰色
+					&.gray {
+						span {
+							background-color: #808080;
+						}
+					}
 				}
 			}
 			.size-select {
 				.size-item {
-
+					width: 20px;
+					height: 20px;
+					font-size: 12px;
+					line-height: 20px;
+					text-align: center;
+					color: $fontGrey;
+					&.selected {
+						color: $baseBlue;
+					}
+				}
+			}
+			.counter-group {
+				.minus, .count, .plus {
+					box-sizing: border-box;
+					width: 20px;
+					height: 20px;
+					line-height: 18px;
+					font-size: 10px;
+					float: left;
+					text-align: center;
+					color: $fontColor;
+				}
+				.minus, .plus {
+					color: $fontColor;
+					border: 1px $grey solid;
+					&.active {
+						color: $fontColor;
+					}
+					&.disabled {
+						color: $fontGrey;
+					}
+				}
+				.count {
+					width: 28px;
+					border-top: 1px $grey solid;
+					border-bottom: 1px $grey solid;
+				}
+			}
+			.shop-btn {
+				padding: 0;
+				margin: 0;
+				display: block;
+				box-sizing: border-box;
+				width: 100%;
+				height: 40px;
+				font-size: 18px;
+				line-height: 34px;
+				border: 3px $baseBlue solid;
+				text-align: center;
+				color: $fontColor;
+				margin-top: 25px;
+				&.btn-buy {
+					color: $fontColor;
+					border-color: $baseBlue;
+				}
+				&.btn-soldout {
+					color: $fontGrey;
+					border-color: $grey;
+				}
+			}
+			.additional-links {
+				width: 100%;
+				height: 40px;
+				margin-top: 10px;
+				.shop-car, .save, .share {
+					display: block;
+					box-sizing: border-box;
+					width: 100%;
+					height: 40px;
+					font-size: 18px;
+					line-height: 34px;
+					border: 3px $grey solid;
+					text-align: center;
+					color: $fontGrey;
+					text-align: center;
+					float: left;
+				}
+				.shop-car {
+					width: 45%;
+					&:before {
+						content: "";
+						width: 19px;
+						height: 34px ;
+						display: inline-block;
+						vertical-align: middle;
+						background: url(../images/icon_shopcar.png) no-repeat center 6px;
+						background-size: 100% 18px; 
+						margin-right: 5px;
+					}
+					margin-right: 2.5%;
+				}
+				.save {
+					width: 25%;
+					&:before {
+						content: "";
+						width: 19px;
+						height: 34px ;
+						display: inline-block;
+						vertical-align: middle;
+						background: url(../images/icon_save.png) no-repeat center 6px;
+						background-size: 100% 18px;
+						margin-right: 5px;
+					}
+				}
+				.share {
+					width: 25%;
+					margin-left: 2.5%;
+					&:before {
+						content: "";
+						width: 20px;
+						height: 34px ;
+						display: inline-block;
+						vertical-align: middle;
+						background: url(../images/icon_share.png) no-repeat center 6px;
+						background-size: 100% 15px; 
+						margin-right: 5px;
+					}
 				}
 			}
 		}
