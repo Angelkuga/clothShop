@@ -1,3 +1,4 @@
+@charset 'utf-8';
 @import 'common/util.scss';
 .page-detail {
 	a {
@@ -10,9 +11,88 @@
 		.top-bar {
 			width: 100%;
 			height: auto;
+			height: 26px;
+			position: relative;
 			.title {
-				font-size: 1rem
+				font-size: 1rem;
+				color: $fontColor;
+				text-align: center;
+				position: relative;
+				width: 100%;
+				line-height: 26px;
+				
 			}
+			.share-save-box {
+				position: absolute;
+				right: 20px;
+				top: 0;
+				width: 60px;
+				box-sizing: border-box;
+				padding-top: 6px;
+				.save-xs, .share-xs {
+					float: right;
+					display: block;
+				}
+				.share-xs {
+					width: 20px;
+					height: 15px;
+					background: url(../images/icon_share.png) no-repeat center center;
+					background-size: 20px 15px;
+				} 
+				.save-xs {
+					width: 20px;
+					height: 15px;
+					background: url(../images/icon_save.png) no-repeat center center;
+					background-size: 20px 15px;
+					margin-right: 6px;
+				}
+			} 
+			.back-box {
+				position: absolute;
+				left: 20px;
+				top: 0;
+				width: 20px;
+				box-sizing: border-box;
+				padding-top: 8px;
+				.back {
+					display: block;;
+					width: 10px;
+					height: 10px;
+					background: url(../images/arrow_lf_m.png) no-repeat center center;
+					background-size: 10px 10px;
+				}
+			}
+		}
+	}
+	.shopcar-xs {
+		width: 100%;
+		height: 40px;
+		box-sizing: border-box;
+		border-top: 1px $grey solid;
+		border-bottom: 1px $grey solid;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		background-color: $white;
+		z-index: 500;
+		.price {
+			font-size: 12px;
+			color: $black;
+			line-height: 38px;
+			margin-left: 20px;
+			float: left;
+		}
+		.add-shopcar {
+			width: 86px;
+			height: 24px;
+			box-sizing: border-box;
+			border: 1px $grey solid;
+			line-height: 22px;
+			color: $fontGrey;
+			font-size: 1rem;
+			float: right;
+			margin-right: 20px;
+			margin-top: 7px;
 		}
 	}
 	.prod {
@@ -88,71 +168,70 @@
 						display: block;
 						width: 14px;
 						height: 14px;
-						// 黑色
 						background-color: #fff;
 						text-indent: -9999px;
 					}
-					// 黑色
+					// heise black
 					&.black {
 						span {
 							background-color: #000;
 						}
 					}
-					// 白色
+					// baise white
 					&.white {
 						span {
 							background-color: #fff;
 						}
 					}
-					// 红色
+					// hongse red
 					&.red {
 						span {
 							background-color: #ff0000;
 						}
 					}
-					// 橙色
+					// chengse orange
 					&.orange  {
 						span {
 							background-color: #FFA500;
 						}
 					}
-					// 黄色
+					// huangse yellow
 					&.yellow {
 						span {
 							background-color: #FFFF00;
 						}
 					}
-					// 绿色
+					// lvse green
 					&.green {
 						span {
 							background-color: #00FF00;
 						}
 					}
-					// 青色
+					// qingse cyan
 					&.cyan {
 						span {
 							background-color: #00FFFF;
 						}
 					}
-					// 蓝色
+					// lanse blue
 					&.blue {
 						span {
 							background-color: #1E90FF;
 						}
 					}
-					// 紫色
+					// zise purple
 					&.purple {
 						span {
 							background-color: #8B00FF;
 						}
 					}
-					// 咖啡色
+					//kafei brown
 					&.brown {
 						span {
 							background-color: #4D3900;
 						}
 					}
-					// 灰色
+					// huise grey
 					&.gray {
 						span {
 							background-color: #808080;
@@ -198,6 +277,8 @@
 					width: 28px;
 					border-top: 1px $grey solid;
 					border-bottom: 1px $grey solid;
+					border-left-width: 0;
+					border-right-width: 0;
 				}
 			}
 			.shop-btn {
@@ -368,19 +449,46 @@
 		
 	}
 	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		.prod {
+			.prod-slider, .prod-detail {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+		}
+		.prod-descri {
+			ul {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
 		.prod-style {
 			.sec{
-				padding: 30px;
+				padding: 30px 20px;
 			}
 			.part-1 {
 				padding-top: 10px;
 			}
 		}
+
 	}
 	@media (max-width: $screen-xs-max) {
+		.prod {
+			.prod-slider, .prod-detail {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+		}
+		.prod-descri {
+			ul {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
 		.prod-style {
 			.sec{
-				padding: 30px;
+				padding: 30px 20px;
 			}
 			.part-1 {
 				padding-top: 10px;
