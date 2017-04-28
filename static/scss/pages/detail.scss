@@ -93,6 +93,7 @@
 			float: right;
 			margin-right: 20px;
 			margin-top: 7px;
+			text-align: center;
 		}
 	}
 	.prod {
@@ -279,6 +280,11 @@
 					border-bottom: 1px $grey solid;
 					border-left-width: 0;
 					border-right-width: 0;
+					border-radius: 0;
+					-webkit-appearance: none;
+					line-height: normal;
+					padding-top: 4px;
+
 				}
 			}
 			.shop-btn {
@@ -369,12 +375,13 @@
 	}
 	.prod-descri {
 		.row {
+			
+		}
+		.sec {
 			padding-top: 65px;
     		padding-bottom: 65px;
-		}
-		.section {
-			border-top: $baseBlue 2px solid;
-			border-bottom: $baseBlue 2px solid;
+			border-top: $baseBlue 1px solid;
+			border-bottom: $baseBlue 1px solid;
 		}
 		ul {
 			padding-left: 40px;
@@ -448,50 +455,60 @@
 		}
 		
 	}
-	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-		.prod {
-			.prod-slider, .prod-detail {
-				padding-left: 20px;
-				padding-right: 20px;
-			}
-
+	.prod-list {
+		.sec {
+			border-top: 1px $baseBlue solid;
+			position: relative;
+			padding-top: 20px;
+			padding-bottom: 20px;
 		}
-		.prod-descri {
-			ul {
-				padding-left: 20px;
-				padding-right: 20px;
-			}
-		}
-		.prod-style {
-			.sec{
-				padding: 30px 20px;
-			}
-			.part-1 {
-				padding-top: 10px;
-			}
-		}
-
 	}
-	@media (max-width: $screen-xs-max) {
+	@media screen and (max-width: $screen-sm-max) {
 		.prod {
 			.prod-slider, .prod-detail {
-				padding-left: 20px;
-				padding-right: 20px;
+				padding: 0;
 			}
-
+			.prod-summary {
+				padding: 20px 20px;
+				border-top: 1px $grey solid;
+				border-bottom: 1px $grey solid;
+				.descri {
+					margin-bottom: 0;
+					font-size: 0.9rem;
+				}
+			}
+			.para-selectors {
+				padding: 20px;
+			}
 		}
 		.prod-descri {
+			.sec {
+				padding: 20px;
+			}
 			ul {
-				padding-left: 20px;
-				padding-right: 20px;
+				padding-left: 0;
 			}
 		}
 		.prod-style {
 			.sec{
-				padding: 30px 20px;
+				padding: 20px;
 			}
 			.part-1 {
 				padding-top: 10px;
+			}
+		}
+		.prod-list {
+			.sec-title {
+				position: absolute;
+				left: 0;
+				top: 0;
+				padding: 0 20px;
+				display: table;
+				font-size: 1rem;
+				line-height: 1rem;
+				color: $fontColor;
+				margin-top: -0.5rem;
+				background-color: $baseBg;
 			}
 		}
 	}
