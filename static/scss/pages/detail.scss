@@ -99,30 +99,30 @@
 	.prod {
 		width: 100%;
 		.prod-slider {
-
+			padding: 20px 70px;
 		}
 		.prod-detail {
 			.detail-info {
 				padding-top: 100px;
 			}
 			.name {
-				font-size: 24px;
+				font-size: 24px/$ppr;
 				line-height: 1;
 				color: $fontColor;
-				margin-bottom: 20px;
+				margin-bottom: 20px/$ppr;
 				margin-top: 0;
 			}
 			.rate {
-				font-size: 20px;
+				font-size: 20px/$ppr;
 				line-height: 1;
 				color: $fontColor;
-				margin-bottom: 20px;
+				margin-bottom: 20px/$ppr;
 			}
 			.descri {
-				font-size: 18px;;
+				font-size: 18px/$ppr;;
 				color: $fontGrey;
-				line-height: 28px;
-				margin-bottom: 50px;
+				line-height: 28px/$ppr;
+				margin-bottom: 50px/$ppr;
 			}
 			.selector {
 				margin-bottom: 8px;
@@ -238,6 +238,9 @@
 							background-color: #808080;
 						}
 					}
+					&.selected {
+						border-color: $baseBlue;
+					}
 				}
 			}
 			.size-select {
@@ -262,10 +265,10 @@
 					font-size: 10px;
 					float: left;
 					text-align: center;
-					color: $fontColor;
+					color: $fontGrey;
 				}
 				.minus, .plus {
-					color: $fontColor;
+					color: $fontGrey;
 					border: 1px $grey solid;
 					&.active {
 						color: $fontColor;
@@ -284,7 +287,7 @@
 					-webkit-appearance: none;
 					line-height: normal;
 					padding-top: 4px;
-
+					color: $fontColor;
 				}
 			}
 			.shop-btn {
@@ -370,8 +373,12 @@
 			}
 		}
 	}
-	.prod-slider {
-		padding: 0 70px;
+	.easyzoom {
+		.easyzoom-flyout {
+			img {
+				width: 200%;
+			}
+		}	
 	}
 	.prod-descri {
 		.row {
@@ -381,7 +388,6 @@
 			padding-top: 65px;
     		padding-bottom: 65px;
 			border-top: $baseBlue 1px solid;
-			border-bottom: $baseBlue 1px solid;
 		}
 		ul {
 			padding-left: 40px;
@@ -465,13 +471,22 @@
 	}
 	@media screen and (max-width: $screen-sm-max) {
 		.prod {
-			.prod-slider, .prod-detail {
+			.prod-slider, {
 				padding: 0;
+			}
+			.prod-detail {
+				padding: 0;
+				.detail-info {
+					padding-top: 0;
+				}
 			}
 			.prod-summary {
 				padding: 20px 20px;
 				border-top: 1px $grey solid;
 				border-bottom: 1px $grey solid;
+				.name, .rate {
+					color: $black;
+				}
 				.descri {
 					margin-bottom: 0;
 					font-size: 0.9rem;
@@ -488,13 +503,24 @@
 			ul {
 				padding-left: 0;
 			}
+			.col-lf {
+				padding-right: 0;
+				ul {
+					li {
+						color: $fontGrey;
+					}
+				}
+			}
+			.col-rt {
+				padding-left: 0;
+			}
 		}
 		.prod-style {
 			.sec{
-				padding: 20px;
+				padding: 0 20px;
 			}
-			.part-1 {
-				padding-top: 10px;
+			.part-1, .part-3{
+				padding-top: 0px;
 			}
 		}
 		.prod-list {
