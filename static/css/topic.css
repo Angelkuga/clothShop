@@ -26,7 +26,7 @@
       -o-transform: rotate(45deg);
       transform: rotate(45deg); }
 .page-navigator.desktop {
-  padding-left: 4.375rem; }
+  padding-left: 40px; }
   .page-navigator.desktop .page-before, .page-navigator.desktop .page-next {
     font-size: 12px;
     color: #2434e2;
@@ -78,6 +78,12 @@
   .page-navigator.mobile .latest-new {
     margin-right: 15px; }
 
+.topic, .topic-detail {
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-right: 1px #2434e2 solid; }
+
 .topic-item .topic-img {
   width: 100%;
   display: block; }
@@ -116,5 +122,12 @@
   margin-top: 40px; }
   .page-topic-detail .page-navigator.desktop .latest-new img, .page-topic-detail .page-navigator.desktop .latest-hot img {
     margin-top: 20px; }
+
+@media (max-width: 991px) {
+  .topic, .topic-detail {
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=topic.css.map */

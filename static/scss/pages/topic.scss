@@ -34,7 +34,7 @@
 	}
 		
 	&.desktop {
-		padding-left: 70px/$ppr;
+		padding-left: 40px;
 		.page-before, .page-next {
 			font-size: 12px;
 			color: $fontColor;
@@ -99,8 +99,11 @@
 		}
 	}	
 }
-.topic {
-
+.topic, .topic-detail {
+	margin-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-right: 1px $baseBlue solid;
 }
 .topic-list {
 
@@ -150,7 +153,6 @@
 	}
 }
 .page-topic-index {
-
 }
 .page-topic-detail {
 	.page-navigator {
@@ -162,5 +164,13 @@
 				}
 			}
 		}
+	}
+}
+@media (max-width: $screen-sm-max) {
+	.topic, .topic-detail {
+		padding-left: 15px;
+		padding-right: 15px;
+		border: none;
+		margin-bottom: 20px;
 	}
 }

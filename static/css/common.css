@@ -12,161 +12,116 @@ ul, ol {
 a:focus {
   text-decoration: none !important; }
 
-.font-family1 {
-  font-family: "MetaSerifCompPro-Book W01 Rg"; }
-
-.font-family2 {
-  font-family: "Meta Serif Offc W01 Medium"; }
-
-.font-family3 {
-  font-family: "Meta Serif Offc W01 Bold"; }
-
-.font-family4 {
-  font-family: "Univers Next W01 Bold"; }
-
-.font-family5 {
-  font-family: "UniversNW01-420CdRegula"; }
-
-.font-family6 {
-  font-family: "Univers LT W01_67 Bold_1476016"; }
-
 .typo1 {
-  font-family: 'MetaSerifCompPro-Book W01 Rg';
   font-size: 30px;
   font-weight: normal !important; }
 
 .typo2 {
-  font-family: 'MetaSerifCompPro-Book W01 Rg';
   font-size: 22px;
   font-weight: normal !important; }
 
 .typo3 {
-  font-family: 'MetaSerifCompPro-Book W01 Rg';
   font-size: 16px;
   font-weight: normal !important; }
 
 .typo4 {
-  font-family: 'MetaSerifCompPro-Book W01 Rg';
   font-size: 14px;
   font-weight: normal !important; }
 
 .typo5 {
-  font-family: 'MetaSerifCompPro-Book W01 Rg';
   font-size: 15px;
   font-weight: normal !important; }
 
 .typo6 {
-  font-family: 'MetaSerifCompPro-Book W01 Rg';
   font-size: 18px;
   font-weight: normal !important;
   display: inline-block; }
 
 .typo7 {
-  font-family: 'Meta Serif Offc W01 Bold';
   font-size: 16px;
   font-weight: normal !important; }
 
 .typo8 {
-  font-family: 'Meta Serif Offc W01 Bold';
   font-size: 12px;
   font-weight: normal !important; }
 
 .typo8b {
-  font-family: 'Meta Serif Offc W01 Bold';
   font-size: 13px;
   font-weight: normal !important; }
 
 .typo9 {
-  font-family: 'UniversNW01-420CdRegula';
   font-size: 13px;
   font-weight: normal !important; }
 
 .typo10 {
-  font-family: 'UniversNW01-420CdRegula';
   font-size: 11px;
   font-weight: normal !important;
   letter-spacing: 0.05em; }
 
 .typo11 {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal !important;
   line-height: 14px; }
 
 .typo12 {
-  font-family: 'Meta Serif Offc W01 Bold';
   font-size: 18px;
   font-weight: normal !important; }
 
 .typo13 {
-  font-family: 'Meta Serif Offc W01 Bold';
   font-size: 22px;
   font-weight: normal !important; }
 
 .typo14 {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal !important;
   line-height: 14px; }
 
 .typo15 {
-  font-family: 'UniversNW01-420CdRegula';
   font-size: 15px;
   font-weight: bold !important; }
 
 .typo16 {
-  font-family: 'Meta Serif Offc W01 Bold';
   font-size: 15px;
   font-weight: normal !important; }
 
 .typo17 {
-  font-family: 'UniversNW01-420CdRegula' !important;
   font-size: 18px;
   font-weight: normal !important; }
 
 .typo18 {
-  font-family: 'MetaSerifCompPro-Book W01 Rg';
   font-size: 15px;
   font-weight: normal !important; }
 
 .typo19 {
-  font-family: 'MetaSerifCompPro-Book W01 Rg';
   font-size: 13px;
   font-weight: normal !important; }
 
 .typo20 {
-  font-family: 'MetaSerifCompPro-Book W01 Rg';
   font-size: 21px;
   line-height: 27px;
   font-weight: normal !important; }
 
 .typo21 {
-  font-family: 'UniversNW01-420CdRegula';
   font-size: 13px;
   font-weight: normal !important; }
 
 .typo22 {
-  font-family: 'Meta Serif Offc W01 Medium';
   font-size: 14px;
   font-weight: normal !important; }
 
 .typo23 {
-  font-family: 'UniversNW01-420CdRegula';
   font-size: 14px;
   font-weight: normal !important; }
 
 .typo24 {
-  font-family: 'Meta Serif Offc W01 Medium';
   font-size: 19px;
   font-weight: normal !important; }
 
 .typo25 {
-  font-family: 'Meta Serif Offc W01 Bold';
   font-size: 16px;
   font-weight: normal !important; }
 
 .typo26 {
-  font-family: 'Meta Serif Offc W01 Bold';
   font-size: 19px;
   font-weight: normal !important; }
 
@@ -1043,7 +998,6 @@ section.textbox-search a.fill-svg-search {
           color: #2434e2;
           font-size: 12px;
           line-height: 20px;
-          font-family: 'Meta Serif Offc W01 Bold';
           position: relative;
           background-repeat: no-repeat;
           background-position: center right;
@@ -1065,7 +1019,6 @@ section.textbox-search a.fill-svg-search {
               padding: 10px 0 10px 0;
               border-top: 0;
               color: #656463;
-              font-family: 'UniversNW01-420CdRegula';
               background: 0;
               font-size: 10px;
               text-transform: uppercase;
@@ -1123,7 +1076,6 @@ section.textbox-search a.fill-svg-search {
       width: 100%;
       height: 35px;
       min-height: 35px;
-      font-family: 'MetaSerifCompPro-Book W01 Rg';
       font-size: 15px;
       padding: 5px 10px 5px 10px;
       line-height: 21px;
@@ -1137,7 +1089,6 @@ section.textbox-search a.fill-svg-search {
         border-left: transparent;
         border-right: transparent;
         padding-left: 40px;
-        font-family: "MetaSerifCompPro-Book W01 Rg";
         color: #333;
         font-size: 12px;
         padding-bottom: 4px;
@@ -1215,7 +1166,6 @@ section.textbox-search a.fill-svg-search {
       width: 100%;
       display: inline-block;
       line-height: 40px;
-      font-family: 'Meta Serif Offc W01 Bold';
       font-size: 1.125rem;
       font-weight: normal !important;
       text-align: center;
@@ -1475,7 +1425,6 @@ section.textbox-search a.fill-svg-search {
   .page .footer-menu .sub-menu a {
     width: 100%;
     display: block;
-    font-family: 'Meta Serif Offc W01 Bold';
     font-size: 0.9375rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -1651,7 +1600,6 @@ section.textbox-search a.fill-svg-search {
       border-left: transparent;
       border-right: transparent;
       padding-left: 0;
-      font-family: "MetaSerifCompPro-Book W01 Rg";
       color: #333;
       font-size: 15px;
       padding-bottom: 4px; }
@@ -1665,7 +1613,6 @@ section.textbox-search a.fill-svg-search {
     border-left: #2434e2 2px solid;
     border-right: #2434e2 2px solid; }
   .ribbon-right .typo2 {
-    font-family: 'MetaSerifCompPro-Book W01 Rg';
     font-size: 20px;
     font-weight: normal !important; }
   .ribbon-right .textbox {
@@ -1676,7 +1623,6 @@ section.textbox-search a.fill-svg-search {
     width: 100%;
     height: 35px;
     min-height: 35px;
-    font-family: 'MetaSerifCompPro-Book W01 Rg';
     font-size: 15px;
     padding: 5px 10px 5px 10px;
     line-height: 21px;
@@ -1930,7 +1876,6 @@ input:focus:-ms-input-placeholder {
       border-left: transparent;
       border-right: transparent;
       padding-left: 0;
-      font-family: "MetaSerifCompPro-Book W01 Rg";
       color: #333;
       font-size: 15px;
       padding-bottom: 4px; }
@@ -1944,7 +1889,6 @@ input:focus:-ms-input-placeholder {
     border-left: #2434e2 2px solid;
     border-right: #2434e2 2px solid; }
   .ribbon-right .typo2 {
-    font-family: 'MetaSerifCompPro-Book W01 Rg';
     font-size: 20px;
     font-weight: normal !important; }
   .ribbon-right .textbox {
@@ -1955,7 +1899,6 @@ input:focus:-ms-input-placeholder {
     width: 100%;
     height: 35px;
     min-height: 35px;
-    font-family: 'MetaSerifCompPro-Book W01 Rg';
     font-size: 15px;
     padding: 5px 10px 5px 10px;
     line-height: 21px;
