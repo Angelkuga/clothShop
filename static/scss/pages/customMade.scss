@@ -1,0 +1,264 @@
+@import 'common/util.scss';
+.page-custom-made {
+
+}
+.custom-made {
+	.custom-tabs {
+		.tab {
+			font-size: 20px;
+			color: $fontGrey;
+			text-align: center;
+			padding: 5px 30px;
+			&.active {
+				color: $black;
+			}
+		}
+	}
+	.custom-content {
+
+	}
+	.panel {
+
+	}
+	.panel-wearing {
+		.row {
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+		}
+		.col {
+			flex: 1 1 220px;
+			&.selected {
+				.img {
+					border-color: $baseBlue;
+				}
+			}
+		}
+		.img-box {
+			width: 220px;
+			height: 330px;
+			background-color: $baseBg;
+			border: 1px $grey solid;
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
+		.txt {
+			width: 100%;
+			text-align: center;
+			font-size: 18px;
+			color: $black;
+			padding: 13px 0;
+		}
+	}
+	.panel-color {
+
+		.row {
+			padding: 0;
+			margin: 0 auto;
+			width: 558px;
+			height: 350px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: space-between;
+		}
+		.color-item {
+			width: 116px;
+			height: 156px;
+			box-sizing: border-box;
+			padding: 2px;
+			.wrap {
+				border: 1px $grey solid;
+			}
+			
+			.color {
+				width: 110px;
+				height:110px;
+				background-color: $baseBg;
+					// heise black
+					&.black {
+							background-color: #000;
+					}
+					// baise white
+					&.white {
+							background-color: #fff;
+					}
+					// hongse red
+					&.red {
+							background-color: #ff0000;
+					}
+					// chengse orange
+					&.orange  {
+							background-color: #FFA500;
+					}
+					// huangse yellow
+					&.yellow {
+							background-color: #FFFF00;
+					}
+					// lvse green
+					&.green {
+							background-color: #00FF00;
+					}
+					// qingse cyan
+					&.cyan {
+							background-color: #00FFFF;
+					}
+					// lanse blue
+					&.blue {
+							background-color: #1E90FF;
+					}
+					// zise purple
+					&.purple {
+							background-color: #8B00FF;
+					}
+					//kafei brown
+					&.brown {
+							background-color: #4D3900;
+					}
+					// huise grey
+					&.gray {
+							background-color: #808080;
+					}
+					
+			}
+			.color-name {
+				border-top: 1px $grey solid;
+				font-size: 16px;
+				color: $black;
+				text-align: center;
+				width: 100%;
+				line-height: 40px;
+				margin: 0;
+			}
+		}
+	}
+	.panel-price {
+		.row {
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+		}
+		.price-item {
+			flex: 0 1 190px;
+			margin: 0 20px;
+			padding: 15px;
+			.price-level {
+				text-align: center;
+				font-size: 20px;
+				line-height: 50px; 
+				color: $fontColor;
+				border-bottom: 3px $baseBlue solid;
+			}
+			.price-descri {
+				text-align: center;
+				padding: 10px 0;
+				font-size: 12px;
+				line-height: 30px;
+				border-bottom: 3px $baseBlue solid;
+			}
+			.price-range {
+				font-size: 20px;
+				line-height: 24px;
+				color: $fontColor;
+				text-align: center;
+			}
+		}
+	}
+	.panel-fabric {
+		.tab {
+			width: 600px;
+			padding: 0;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.tab-navs {
+			width: 236px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.fabric-item {
+				flex: 0 1 110px;
+				.fabric {
+					width: 110px;
+					height:110px;
+					background-color: $grey;
+						// heise black
+						&.black {
+								background-color: #000;
+						}
+						// baise white
+						&.white {
+								background-color: #fff;
+						}
+						// hongse red
+						&.red {
+								background-color: #ff0000;
+						}
+						// chengse orange
+						&.orange  {
+								background-color: #FFA500;
+						}
+						// huangse yellow
+						&.yellow {
+								background-color: #FFFF00;
+						}
+						// lvse green
+						&.green {
+								background-color: #00FF00;
+						}
+						// qingse cyan
+						&.cyan {
+								background-color: #00FFFF;
+						}
+						// lanse blue
+						&.blue {
+								background-color: #1E90FF;
+						}
+						// zise purple
+						&.purple {
+								background-color: #8B00FF;
+						}
+						//kafei brown
+						&.brown {
+								background-color: #4D3900;
+						}
+						// huise grey
+						&.gray {
+								background-color: #808080;
+						}
+						
+				}
+				.fabric-name {
+					border-top: 1px $grey solid;
+					font-size: 16px;
+					color: $black;
+					text-align: center;
+					width: 100%;
+					line-height: 40px;
+					margin: 0;
+				}
+			
+			}
+
+		}
+	}
+	.tab-content {
+		width: 307px;
+		height: 310px;
+		background-color: $grey;
+	}
+}

@@ -10,14 +10,14 @@
 
 	    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="../css/common.css">
-	    <link rel="stylesheet" type="text/css" href="../css/topic.css">
+	    <link rel="stylesheet" type="text/css" href="../css/customMade.css">
 
 	    <script type="text/javascript" src="../js/jquery-3.2.0.js"></script>
 
 	    <script type="text/javascript" src="../js/bootstrap.js"></script>
 
         <script type="text/javascript" src="../js/common.js"></script>
-       <!--  <script type="text/javascript" src="../js/topicIndex.js"></script> -->
+        <script type="text/javascript" src="../js/customMade.js"></script>
 	</head>
 	<body>
 		<div class="page page-custom-made">
@@ -576,32 +576,42 @@
                     <div class="wrap">
                        <div class="custom-tabs">
                            <ul>
-                               <li>定制</li>
-                               <li>选择您的穿着场景</li>
-                               <li>选择您的颜色</li>
+                               <li class="tab">定制</li>
+                               <li class="tab">选择您的穿着场景</li>
+                               <li class="tab">选择您的颜色</li>
                            </ul>
                        </div>
                        <div class="custom-content">
                             <div class="pannel panel-wearing">
                                 <div class="row">
-                                    <div class="col">
-                                        <img src="">
+                                    <div class="col selected">
+                                        <div class="img-box">
+                                            <img src="">
+                                        </div>
                                         <p class="txt">商务</p>
                                     </div>
                                     <div class="col">
-                                        <img src="">
+                                        <div class="img-box">
+                                            <img src="">
+                                        </div>
                                         <p class="txt">宴会</p>
                                     </div>
                                     <div class="col">
-                                        <img src="">
+                                        <div class="img-box">
+                                            <img src="">
+                                        </div>
                                         <p class="txt">婚礼</p>
                                     </div>
                                     <div class="col">
-                                        <img src="">
+                                        <div class="img-box">
+                                            <img src="">
+                                        </div>
                                         <p class="txt">休闲</p>
                                     </div>
                                     <div class="col">
-                                        <img src="">
+                                        <div class="img-box">
+                                            <img src="">
+                                        </div>
                                         <p class="txt">运动</p>
                                     </div>
                                 </div>
@@ -609,45 +619,64 @@
 
                             <div class="pannel panel-color">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="color"></div>
-                                        <p class="color-name">黑black</p>
+                                    <div class="color-item">
+                                        <div class="wrap">
+                                            <div class="color black"></div>
+                                            <p class="color-name">黑black</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="color"></div>
-                                        <p class="color-name">白white</p>
+                                    <div class="color-item">
+                                        <div class="wrap">
+                                            <div class="color white"></div>
+                                            <p class="color-name">白white</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="color"></div>
-                                        <p class="color-name">灰grey</p>
+                                    <div class="color-item">
+                                        <div class="wrap">
+                                            <div class="color grey"></div>
+                                            <p class="color-name">灰grey</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="color"></div>
-                                        <p class="color-name">蓝blue</p>
+                                    <div class="color-item">
+                                        <div class="wrap">
+                                            <div class="color blue"></div>
+                                            <p class="color-name">蓝blue</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="color"></div>
-                                        <p class="color-name">黄yellow</p>
+                                    <div class="color-item">
+                                        <div class="wrap">
+                                            <div class="color yellow"></div>
+                                            <p class="color-name">黄yellow</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="color"></div>
-                                        <p class="color-name">绿green</p>
+                                    <div class="color-item">
+                                        <div class="wrap">
+                                            <div class="color green"></div>
+                                            <p class="color-name">绿green</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="color"></div>
-                                        <p class="color-name">粉pink</p>
+                                    <div class="color-item">
+                                        <div class="wrap">
+                                            <div class="color pink"></div>
+                                            <p class="color-name">粉pink</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="color"></div>
-                                        <p class="color-name">咖brown</p>
+                                    <div class="col-md-3 color-item">
+                                        <div class="wrap">
+                                            <div class="color brown"></div>
+                                            <p class="color-name">咖brown</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="pannel panel-price">
+                                <div class="row">
                                      <div class="price-item">
                                         <h6 class="price-level">BASE</h6>
                                         <p class="price-descri">
-                                            介绍介绍介绍介绍介绍介绍介绍介绍
+                                            介绍介<br/>绍介绍介绍
+                                            <br/>介绍介绍
+                                            <br/>介绍介绍
                                         </p>
                                         <p class="price-range">￥5000-10000</p>
                                         <a href="#" class="check"></a>
@@ -655,15 +684,19 @@
                                     <div class="price-item">
                                         <h6 class="price-level">PREMIUM</h6>
                                         <p class="price-descri">
-                                            介绍介绍介绍介绍介绍介绍介绍介绍
+                                            介绍介<br/>绍介绍介绍
+                                            <br/>介绍介绍
+                                            <br/>介绍介绍
                                         </p>
                                         <p class="price-range">￥10000-20000</p>
                                         <a href="#" class="check"></a>
                                     </div>
-                                     <div class="price-item">
+                                    <div class="price-item">
                                         <h6 class="price-level">LUXURY</h6>
                                         <p class="price-descri">
-                                            介绍介绍介绍介绍介绍介绍介绍介绍
+                                            介绍介<br/>绍介绍介绍
+                                            <br/>介绍介绍
+                                            <br/>介绍介绍
                                         </p>
                                         <p class="price-range">￥20000+</p>
                                         <a href="#" class="check"></a>
@@ -673,19 +706,19 @@
                             <div class="pannel panel-fabric">
                                 <div class="tab">
                                     <div class="tab-navs">
-                                       <div class="col-md-3">
+                                       <div class="fabric-item">
                                             <div class="fabric"></div>
                                             <p class="fabric-name">羊毛</p>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="fabric-item">
                                             <div class="fabric"></div>
                                             <p class="fabric-name">涤纶</p>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="fabric-item">
                                             <div class="fabric"></div>
                                             <p class="fabric-name">雪纺</p>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="fabric-item">
                                             <div class="fabric"></div>
                                             <p class="fabric-name">棉</p>
                                         </div>
