@@ -4,14 +4,59 @@
 }
 .custom-made {
 	.custom-tabs {
+		margin: 40px 0;
+		ul {
+			display: flex;
+			width: 100%;
+			flex-flow: row no-wrap;
+			justify-content: center;
+		}
+		
 		.tab {
-			font-size: 20px;
-			color: $fontGrey;
 			text-align: center;
-			padding: 5px 30px;
-			&.active {
-				color: $black;
+			padding: 0 30px;
+			position: relative;
+			flex: 1 1 380px;
+			span {
+				font-size: 20px;
+				line-height: 46px;
+				color: $fontGrey;
+				display: inline-block;
 			}
+			&:after {
+				content: "";
+				width: 12px;
+				height: 12px;
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				border-top: 1px $grey solid;
+				border-right: 1px $grey solid;
+				-webkit-transform: translate3d(0, -50%, 0) rotate(45deg);
+				-moz-transform: translate3d(0, -50%, 0) rotate(45deg);
+				-o-transform: translate3d(0, -50%, 0) rotate(45deg);
+				transform: translate3d(0, -50%, 0) rotate(45deg);
+			}
+			&.tab-prev {
+				text-align: right;
+			}
+			&.tab-next {
+				text-align: left;
+				&:after {
+					display: none;
+				}
+			}
+			&.active {
+				span {
+					color: $black;
+					border-bottom: 1px $black solid;
+				}
+				&:after {
+					border-color: $black;
+				}
+			}
+			
 		}
 	}
 	.custom-content {
@@ -22,25 +67,20 @@
 	}
 	.panel-wearing {
 		.row {
+			width: 100%;
 			padding: 0;
 			margin: 0;
 			display: flex;
+			display: -webkit-flex;
 			flex-direction: row;
+			flex-wrap: no-wrap;
 			justify-content: space-between;
 
 		}
-		.col {
-			flex: 1 1 220px;
-			&.selected {
-				.img {
-					border-color: $baseBlue;
-				}
-			}
-		}
 		.img-box {
-			width: 220px;
+			width: 100%;
 			height: 330px;
-			background-color: $baseBg;
+			background-color: #ccc;
 			border: 1px $grey solid;
 			img {
 				width: 100%;
@@ -55,6 +95,22 @@
 			color: $black;
 			padding: 13px 0;
 		}
+		.col {
+			flex: 0 1 220px;
+			margin: 0 25px;
+			&.selected {
+				.img-box {
+					border-color: $baseBlue;
+				}
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		
 	}
 	.panel-color {
 
@@ -68,6 +124,10 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: space-between;
+			&:before, &:after {
+				display: none;
+			}
+
 		}
 		.color-item {
 			width: 116px;
@@ -91,8 +151,8 @@
 							background-color: #fff;
 					}
 					// hongse red
-					&.red {
-							background-color: #ff0000;
+					&.grey {
+							background-color: $grey;
 					}
 					// chengse orange
 					&.orange  {
@@ -136,6 +196,10 @@
 				width: 100%;
 				line-height: 40px;
 				margin: 0;
+				span {
+					font-size: 12px;
+					color: $grey;
+				}
 			}
 		}
 	}
@@ -176,7 +240,7 @@
 	}
 	.panel-fabric {
 		.tab {
-			width: 600px;
+			width: 560px;
 			padding: 0;
 			margin: 0 auto;
 			display: flex;
@@ -189,9 +253,10 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: space-between;
-
+			align-content: space-between;
 			.fabric-item {
 				flex: 0 1 110px;
+				border: 1px $grey solid;
 				.fabric {
 					width: 110px;
 					height:110px;
@@ -251,14 +316,43 @@
 					line-height: 40px;
 					margin: 0;
 				}
-			
+				&.selected {
+					border-color: $baseBlue;
+				}
 			}
 
 		}
 	}
 	.tab-content {
 		width: 307px;
-		height: 310px;
+		height: 320px;
 		background-color: $grey;
+	}
+	.custom-nav {
+		text-align: center;
+		margin-top: 70px;
+		.btn {
+			display: inline-block;;
+			padding: 12px 30px;
+			font-size: 18px;
+			line-height: 1;
+			color: $fontGrey;
+			text-align: center;
+			border-radius: 24px;
+			border:  1px $grey solid;
+			&.active {
+				border-color: $baseBlue;
+			}
+			&.prev-btn {
+				margin-right: 24px;
+			}
+		}
+	}
+	.rec-txt {
+		color: $fontColor;
+		line-height: 1;
+		font-size: 12px;
+		text-align: center;
+		padding: 20px 0;
 	}
 }
